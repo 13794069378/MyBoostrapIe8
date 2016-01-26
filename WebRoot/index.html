@@ -14,7 +14,7 @@
 		<!--[if lte IE 9]>
 		<script src="script/js/respond.min.js"></script>
 		<script src="script/js/html5shiv.js"></script>
-		<script src="MyBootstrapIe8/WebRoot/script/selectivizr-min.js"></script>
+		<script src="script/selectivizr-min.js"></script>
 		<![endif]-->
 		
         <!-- Bootstrap -->
@@ -26,7 +26,6 @@
         <script src="script/bootflat/js/jquery.fs.selecter.min.js"></script>
         <script src="script/bootflat/js/jquery.fs.stepper.min.js"></script>
         
-        <script type="text/javascript" src="script/dropdown.js"></script>
         <script src="script/bootstrap-table/bootstrap-table.js"></script>
         <script src="script/bootstrap-table/extensions/export/bootstrap-table-export.js"></script>
         <script src="script/bootstrap-table/extensions/export/tableExport.js"></script> 
@@ -40,21 +39,26 @@
   <div class="container-fluid">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-	  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-           <span class="sr-only">Toggle navigation</span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-           <span class="icon-bar"></span>
-      </button>
+
       <a class="navbar-brand" href="#">
       	 <i class="glyphicon glyphicon-list"></i>
 	  </a>
-	  <div id="navbar" class="collapse navbar-collapse" >
-	  	<ul class="nav navbar-nav">
-	  		<li><button type="button" class="btn btn-primary navbar-btn"><i class="glyphicon glyphicon-th" aria-hidden="true"></i>计划分单</button></li>
-	  		<li><button type="button" class="btn btn-primary navbar-btn"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>查询</button></li>
-	  	</ul>
-	  </div>
+	  <button type="button" class="btn btn-primary navbar-btn"><i class="glyphicon glyphicon-th" aria-hidden="true"></i>计划分单</button>
+	  <button type="button" class="btn btn-primary navbar-btn"><i class="glyphicon glyphicon-search" aria-hidden="true"></i>查询</button>
+	  
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
 	  
     </div>
   </div><!-- /.container-fluid -->
@@ -115,19 +119,82 @@
                 <a href="https://github.com/wenzhixin/scutech-redmine">scutech-redmine</a>
             <td>6</td>
             <td>3</td>
-            <td><a class="like" href="javascript:void(0)" title="Like"><i class="glyphicon glyphicon-heart"></i></a> </td>
+            <td>
+            <!-- <a class="like" href="javascript:void(0)" title="Like"><i class="glyphicon glyphicon-heart"></i></a> -->
+	<div class="btn-group">
+      <button id="tddd" type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Primary <span class="caret"></span></button>
+      <ul class="dropdown-menu">
+        <li><a href="#">Action</a></li>
+        <li><a href="#">Another action</a></li>
+        <li><a href="#">Something else here</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="#">Separated link</a></li>
+      </ul>
+    </div>
+             </td>
         </tr>
         </tbody>
     </table>
 </div>
 
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Brand</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Submit</button>
+      </form>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Link</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 </div>
 
     </body>
     
     <script type="text/javascript">
-    
-
     
     
     </script>
