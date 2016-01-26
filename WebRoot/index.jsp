@@ -1,26 +1,23 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
-<%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
-%>
-
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-    <base href="<%=basePath%>">
-    
-    <title>My JSP 'index.jsp' starting page</title>
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">    
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
-	<link rel="stylesheet" type="text/css" href="styles.css">
-	-->
-  </head>
-  
-  <body>
-    This is my JSP page. <br>
-  </body>
+<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="author" content="YZJ" />
+	<title>ie8</title>
+	<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" href="bootstrap/css/style.css">
+	<link rel="stylesheet" href="bootstrap/css/style.css">
+	<!--[if lte IE 9]>
+	<script src="script/js/respond.min.js"></script>
+	<script src="script/js/html5shiv.js"></script>
+	<script src="MyBootstrapIe8/WebRoot/script/selectivizr-min.js"></script>
+	<![endif]-->
+	<script src="http://libs.baidu.com/jquery/1.10.2/jquery.js"></script>
+	<script src="script/js/bootstrap.min.js"></script>
+	<script src="script/js/site.min.js"></script>
+</head>
+<body>
+</body>
 </html>
